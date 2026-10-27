@@ -79,7 +79,7 @@ const brownies = [
   {
     name: "Escondidinho de Brownie",
     price: 12,
-    image: "brownie-classico.jpg",
+    image: "afogadinho-brownie.jpg",
     description: "Brownie denso e fudgy de chocolate meio amargo, crocante por fora e derretendo por dentro."
   },
   
