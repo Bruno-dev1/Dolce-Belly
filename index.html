@@ -3,37 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dolcebelly Doces | Cardápio Cookies</title>
-  <meta name="description" content="Cardápio de cookies da Dolcebelly Doces — @Dolcebelly.doces">
+  <title>Dolcebelly Doces | Cardápio</title>
+  <meta name="description" content="Cardápio da Dolcebelly Doces — cookies, brownies e muito mais. @Dolcebelly.doces">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="img/estrelinha.png"">
+  <link rel="icon" href="img/estrelinha.png">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
       <p class="brand"><img src="img/estrelinha.png" alt="" class="brand-star"> Dolcebelly Doces</p>
+      <nav class="header-nav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link active">Cardápio</a>
+        <a href="pedidos.html" class="nav-link btn btn-solid btn-sm">Fazer pedido</a>
+      </nav>
       <a class="handle" href="https://www.instagram.com/dolcebelly.doces" target="_blank" rel="noopener">@Dolcebelly.doces</a>
     </div>
   </header>
 
   <main>
+    <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <h1 id="hero-title">Um pedacinho de felicidade em cada mordida.</h1>
-        <p class="hero-sub">Cardápio Cookies</p>
-        <a class="btn btn-solid" href="#cardapio">Ver cardápio</a>
+        <p class="hero-sub">Escolha o seu favorito e faça seu pedido</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#cardapio">Ver cardápio</a>
+          <a class="btn" href="pedidos.html">Fazer pedido</a>
+        </div>
       </div>
     </section>
 
+    <!-- Navegação rápida por categoria -->
+    <div class="category-nav" aria-label="Ir para categoria">
+      <div class="container">
+        <a href="#sec-cookies" class="category-pill">🍪 Cookies</a>
+        <a href="#sec-brownies" class="category-pill">🍫 Brownies</a>
+      </div>
+    </div>
+
+    <!-- Cardápio -->
     <section class="menu" id="cardapio" aria-labelledby="menu-title">
       <div class="container">
         <h2 id="menu-title">Nosso Cardápio</h2>
-        <div class="grid" id="menu-grid-cookies">
-          
-        </div>
+
+        <!-- As seções de categoria são injetadas aqui pelo script.js -->
+        <div id="menu-sections"></div>
       </div>
     </section>
   </main>
@@ -43,6 +61,7 @@
       <p class="brand"><img src="img/estrelinha.png" alt="" class="brand-star"> Dolcebelly Doces</p>
       <a class="handle" href="https://www.instagram.com/dolcebelly.doces" target="_blank" rel="noopener">@Dolcebelly.doces</a>
       <p class="footer-note">Feito com carinho, do jeitinho que você gosta.</p>
+      <a href="pedidos.html" class="btn btn-solid" style="margin-top:1rem">Fazer pedido agora</a>
     </div>
   </footer>
 
